@@ -1,0 +1,83 @@
+*{
+    font-family: cursive;
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0px;
+    border: 0px;
+    padding: 15px;  
+}
+
+Section{
+    box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    background-color: rgb(150, 150, 150);
+    margin: 1.25%;
+}
+
+p{
+    padding: 15px;
+}
+
+h1{
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.75em;
+}
+
+h3{
+    font-size: 1.25em;
+    float: right;
+    top: -1px;
+    right: -1px;
+    box-sizing: border-box;
+    margin: 0px;
+    text-align: center;
+    width: 40%;
+    position: relative;
+    border: 1px solid black;
+}
+#Section1 h3{
+    background-color:#daa4ac;
+}
+
+#Section2 h3{
+    background-color:#c0374b;
+    color: white;
+}
+
+#Section3 h3{
+    background-color:rgb(212, 154, 44);
+}
+
+@media (min-width:992px){
+    Section{
+        width: 30%;
+    }
+}
+    
+@media (min-width:768px) and (max-width:991px){
+    #Section1{
+        width: 45%;
+        margin: 2%;
+    }
+    #Section2{
+        width: 45%;
+        margin: 2%;
+    }
+    #Section3 h3{
+        width:18%;
+    }
+    #Section3{
+        width: 95%;
+    }
+}
+
+@media (max-width:767px){
+    Section{
+        width: 90%;
+        margin: 5%;
+    }
+}
